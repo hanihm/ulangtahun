@@ -15,7 +15,7 @@ body {
 	background-color: #FFDAB9;
 }
 
-/* --- INOVASI: LATAR BELAKANG MALAM HANGAT & ESTETIK --- */
+/* --- LATAR BELAKANG MALAM HANGAT & ESTETIK --- */
 .peach-after {
 	-webkit-animation: modern_glow 10s infinite alternate;
 	-moz-animation: modern_glow 10s infinite alternate;
@@ -541,16 +541,25 @@ audio {
 	100% { transform: translate(0px,0px); }
 }
 
+/* --- PENGATURAN BALON (RESPONSIF AGAR TIDAK KEBESARAN DI HP) --- */
 .balloons {
 	position: fixed;
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 100px;
-	height: 183px;
+	width: 80px;
+	height: 146px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+	background-size: contain;
 }
+
+@media only screen and (max-width: 768px) {
+    .balloons {
+        transform: scale(0.65); /* Mengecilkan balon otomatis di HP agar muat semua */
+        transform-origin: bottom center;
+    }
+}
+
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
@@ -609,84 +618,4 @@ audio {
 	-webkit-animation: balloons_rotate_two linear 10s infinite;
 	-webkit-transform: rotate(-20deg);
 	-moz-animation: balloons_rotate_two linear 10s infinite;
-	-moz-transform: rotate(-20deg);
-	-o-animation: balloons_rotate_two linear 10s infinite;
-	-o-transform: rotate(-20deg);
-	-ms-animation: balloons_rotate_two linear 10s infinite;
-	-ms-transform: rotate(-20deg);
-	animation: balloons_rotate_two linear 10s infinite;
-	transform: rotate(-20deg);
-}
-@-webkit-keyframes balloons_rotate_two {
-	0% { -webkit-transform: rotate(-20deg); }
-	50% { -webkit-transform: rotate(20deg); }
-	100% { -webkit-transform: rotate(-20deg); }
-}
-@-moz-keyframes balloons_rotate_two {
-	0% { -moz-transform: rotate(-20deg); }
-	50% { -moz-transform: rotate(20deg); }
-	100% { -moz-transform: rotate(-20deg); }
-}
-@-o-keyframes balloons_rotate_two {
-	0% { -o-transform: rotate(-20deg); }
-	50% { -o-transform: rotate(20deg); }
-	100% { -o-transform: rotate(-20deg); }
-}
-@-ms-keyframes balloons_rotate_two {
-	0% { -ms-transform: rotate(-20deg); }
-	50% { -ms-transform: rotate(20deg); }
-	100% { -ms-transform: rotate(-20deg); }
-}
-@keyframes balloons_rotate_two {
-	0% { transform: rotate(-20deg); }
-	50% { transform: rotate(20deg); }
-	100% { transform: rotate(-20deg); }
-}
-
-.balloon-border{
-	position: fixed;
-	top: 100%;
-	opacity: 0.5;
-	z-index: 9999;
-}
-.control-panel {
-	position: fixed;
-	bottom: 0;
-	padding: 10px 0px 10px 0px;
-}
-#play, #bannar_coming, #balloons_flying, #cake_fadein, #light_candle, #wish_message, #story {
-	display: none;
-}
-
-.cake-cover {
-	margin-top: 50px;
-}
-.message {
-	margin-top: 150px;
-	margin-bottom: 80px;
-	display: none;
-}
-
-/* --- INOVASI: TEKS UCAPAN LEBIH LEMBUT & NYAMAN DIBACA --- */
-.message p {
-	font-family: 'Signika', sans-serif;
-	font-size: 22px;
-	text-transform: none;
-	color: #ffb3c6;
-	text-shadow: 0 0 10px rgba(255, 179, 198, 0.3);
-	display: none;
-	font-weight: 600;
-	line-height: 1.6;
-}
-
-/* --- INOVASI: TOMBOL MODERN GRADASI PINK PASTEL --- */
-.btn-primary {
-    border: none;
-    border-radius: 25px;
-    padding: 8px 16px;
-    text-transform: none;
-    font-family: 'Signika', sans-serif;
-    font-weight: 600;
-    color: #fff;
-    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
-    box-shadow: 0 4px 15px rgba(255, 117, 140,
+	-moz-transform
