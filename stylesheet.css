@@ -546,15 +546,16 @@ audio {
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 80px;
-	height: 146px;
+	width: 100px;
+	height: 183px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
 /* === TEMPELKAN KODE INI DI SINI (KHUSUS UNTUK HP) === */
 @media only screen and (max-width: 768px) {
     .balloons {
-        transform: scale(0.65); /* Mengecilkan balon otomatis di HP agar muat semua */
+        /* Menggunakan zoom/scale dari tengah bawah agar gambar balon mengecil utuh tanpa terpotong */
+        transform: scale(0.55); 
         transform-origin: bottom center;
     }
 }
