@@ -8,15 +8,13 @@
 	<title>Happy Birthday Mba Vina</title>
 	<meta charset="UTF-8" />
 	<meta name="description" content="Happy Birthday">
-	<meta name="robots" content="index, follow" />
-	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
+	<meta name="robots" content="index, follow" />	
     <meta name="keywords" content="Birthday, Happy">
     <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
     <meta property="og:image" content="favicon.ico" />
     <meta property="og:description" content="Wish you a very Happy Birthday">
     <!-- End of Facebook Meta Tags -->
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -25,7 +23,6 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="loading.css">
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
@@ -34,34 +31,33 @@
 	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="hbd.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
+	    Your browser isn't invited for super fun audio time.
     </audio>
     <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">&#9825</h2>
+    	<h2 style="color:#F2B300;">M</h2>
     </div>
     <div class="balloons text-center" id="b2">
-    	<h2 style="color:#0719D4;">&#9825</h2>
+    	<h2 style="color:#0719D4;">b</h2>
     </div>
 	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">N</h2>
+    	<h2 style="color:#D14D39;"></h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">I</h2>
+    	<h2 style="color:#8FAD00;">V</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">A</h2>
+    	<h2 style="color:#8377E4;">i</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">&#9825</h2>
+    	<h2 style="color:#99C96A;">n</h2>
     </div>
     <div class="balloons text-center" id="b7">
-    	<h2 style="color:#20CFB4;">&#9825</h2>
+    	<h2 style="color:#20CFB4;">a</h2>
     </div>
 
     <img src="Balloon-Border.png" width="100%" class="balloon-border">
- 
 
-	<div class="container">
+	<div class="container" style="padding-bottom: 80px;">
 		
 		<div class="row">
 			<div class="col-md-2 col-xs-2 bulb-holder">
@@ -85,14 +81,12 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
+				<img src="banner.png" class="bannar img-responsive" style="margin: 0 auto;">
 			</div>
 		</div>
-		<!-- <div class="row message">
-			<div class="col-md-12"><p>Khushbu</p></div>
-		</div> -->
+		
 		<div class="row cake-cover">
-			<div class="col-md-12 texr-center">
+			<div class="col-md-12 text-center"> <!-- Typo texr-center sudah diperbaiki menjadi text-center -->
 				<div class="cake">
 				  <div class="velas">
 				    <div class="fuego"></div>
@@ -106,12 +100,13 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="row message">
-			<div class="col-md-12">
+			<div class="col-md-12 text-center">
 				<p>Selamat ulang tahun, Mba Vina! &#127881;</p>
     			<p>Makasih banyak ya Mba,</p>
     			<p>udah selalu jadi rekan kerja</p>
-    			<p>sekaligus sosok kakak yang buat aku.</p>
+    			<p>sekaligus sosok kakak buat aku.</p>
     			<p>Makasih juga ya Mba,</p>
     			<p>udah sering jadi tempat cerita</p>
     			<p>dan temen diskusi yang seru</p>
@@ -126,32 +121,22 @@
     			<p>Happy Birthday, Mba! &#10084;&#65039;&#10024;</p>
 			</div>
 		</div>
-		<div class="navbar navbar-fixed-bottom">
+		
+		<div class="navbar navbar-fixed-bottom" style="background: rgba(255,255,255,0.9); padding: 5px 0;">
 			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
-					<button class="btn btn-primary" id="play">Play Music</button>
-					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
-					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
-					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
-					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-					<button class="btn btn-primary" id="story">A mesage for you</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+				<!-- Ditambahkan col-xs-12 agar tombol menyesuaikan layar HP dengan rapi -->
+				<div class="col-md-8 text-center col-md-offset-2 col-xs-12">
+					<button class="btn btn-primary btn-sm" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary btn-sm" id="play">Play Music</button>
+					<button class="btn btn-primary btn-sm" id="bannar_coming">Let's Decorate</button>
+					<button class="btn btn-primary btn-sm" id="balloons_flying">Fly With Balloons</button>
+					<button class="btn btn-primary btn-sm" id="cake_fadein">Most Delicious Cake Ever</button>
+					<button class="btn btn-primary btn-sm" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary btn-sm" id="wish_message">Happy Birthday</button>
+					<button class="btn btn-primary btn-sm" id="story">A message for you</button>
 				</div>
 			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
 		</div>
-
 
 	</div>
 </body>
@@ -166,6 +151,5 @@
 
   ga('create', 'UA-58229732-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </html>
